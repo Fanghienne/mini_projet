@@ -16,6 +16,16 @@
                         {{ __('Dashboard') }}
                     </x-nav-link>
                 </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link :href="route('admin_dashboard')" :active="request()->routeIs('admin_dashboard')">
+                        {{ __('Users') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link :href="route('superadmin_dashboard')" :active="request()->routeIs('superadmin_dashboard')">
+                        {{ __('Admin') }}
+                    </x-nav-link>
+                </div>
             </div>
 
             <!-- Settings Dropdown -->

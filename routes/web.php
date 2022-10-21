@@ -21,4 +21,14 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
+// ADMIN DASHBOARD
+Route::get('/admin_dashboard', function () {
+    return view('admin_dashboard');
+})->middleware(['auth', 'admin'])->name('admin_dashboard');
+
+// SUPERADMIN DASHBOARD
+Route::get('/superadmin_dashboard', function () {
+    return view('superadmin_dashboard');
+})->middleware(['auth', 'superadmin'])->name('superadmin_dashboard');
+
 require __DIR__.'/auth.php';
