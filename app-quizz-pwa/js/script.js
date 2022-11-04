@@ -135,13 +135,13 @@ function showResult() {
     result_box.classList.add("activeResult");
     const scoreText = result_box.querySelector(".score_text");
     if (userScore > 3) {
-        let scoreTag = '<span>Félicitations ! 🎉, Tu as obtenu <p>' + userScore + '</p>/<p>' + questions.length + '</p></span>';
+        let scoreTag = '<span>Félicitations ! 🎉, tu as obtenu <p>' + userScore + '</p>/<p>' + questions.length + '</p></span>';
         scoreText.innerHTML = scoreTag;
     } else if (userScore > 1) {
-        let scoreTag = '<span>Bien joué 😎, Tu as obtenu <p>' + userScore + '</p>/<p>' + questions.length + '</p></span>';
+        let scoreTag = '<span>Bien joué 😎, tu as obtenu <p>' + userScore + '</p>/<p>' + questions.length + '</p></span>';
         scoreText.innerHTML = scoreTag;
     } else {
-        let scoreTag = '<span>Terrifiant 😐, Tu as obtenu seulement <p>' + userScore + '</p>/<p>' + questions.length + '</p></span>';
+        let scoreTag = '<span>Terrifiant 😐, tu as obtenu seulement <p>' + userScore + '</p>/<p>' + questions.length + '</p></span>';
         scoreText.innerHTML = scoreTag;
     }
 }
