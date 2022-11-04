@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Quizz PWA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <div class="start_btn"><button>Commencer le Quizz 🔪🎃</button></div>
+
+    <div class="info_box">
+        <div class="info-title"><span>Règles</span></div>
+        <div class="info-list">
+            <div class="info">- <span>15 secondes</span> par questions.</div>
+            <div class="info">- Pas de retour en arrière.</div>
+            <div class="info">- GL & HF 😉</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Quitter</button>
+            <button class="restart">Continuer</button>
+        </div>
+    </div>
+
+    <div class="quiz_box">
+        <header>
+            <div class="title">Horror Quizz</div>
+            <div class="timer">
+                <div class="time_left_txt">Chrono</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Question -->
+            </div>
+            <div class="option_list">
+                <!-- Options -->
+            </div>
+        </section>
+
+        <footer>
+            <div class="total_que">
+                <!-- Question Count Number -->
+            </div>
+            <button class="next_btn">Suivant</button>
+        </footer>
+    </div>
+
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">Quizz terminé 😱</div>
+        <div class="score_text">
+            <!-- Score Result -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Rejouer</button>
+            <button class="quit">Quitter</button>
+        </div>
+    </div>
+
+    <script src="js/questions.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
